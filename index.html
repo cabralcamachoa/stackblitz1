@@ -1,0 +1,80 @@
+<html>
+<head>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="index.js"></script>
+  </head>
+  <body>
+<h1><center>Visualización  AG1 y AG2</center></h1>
+<p>Nombre: Armando Cabral</p>
+<p>Url : js-yeek6w.stackblitz.io</p>
+<br>
+<p>
+</p>
+<div class="tab">
+  <button class="tablinks" onclick="openActivity(event, 'AG1')">Actividad 1</button>
+  <button class="tablinks" onclick="openActivity(event, 'AG2')">Actividad 2</button>
+</div>
+<div id="AG1" class="tabcontent">
+<p> Durante la AG1 hemos trabajado con las Emisiones de CO2, para lo que hemos realizado los siguientes pasos:</p>
+  <ul>
+    <li>Realizado un Web Scraping sobre la página de emisiones por paises de la Wikipedia.</li>
+    <li>Creando el siguiente documento: <a href="https://docs.google.com/spreadsheets/d/1fA-THGl9zY0KWW_Ox5C8_nHwsGsYnSUKjnoF6DzgaN8/edit?usp=sharing">Documento</a></li>
+    <li>Y exportando las siguientes gráficas:</li>
+  </ul>
+<center>
+<iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQYaMp0XDM-amQK5B9RlSNxPt7sLs9CmfHcf4e-PtHm61hA332tRbQCbjImISwGRtKd1_CjxD33Rnkx/pubchart?oid=1293085221&amp;format=interactive"></iframe>
+</center>
+<center>
+<iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQYaMp0XDM-amQK5B9RlSNxPt7sLs9CmfHcf4e-PtHm61hA332tRbQCbjImISwGRtKd1_CjxD33Rnkx/pubchart?oid=1909007183&amp;format=interactive"></iframe>
+</center>
+<p>A continuación muestro las gráficas solicitadas para subir nota</p>
+<center>
+<iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQYaMp0XDM-amQK5B9RlSNxPt7sLs9CmfHcf4e-PtHm61hA332tRbQCbjImISwGRtKd1_CjxD33Rnkx/pubchart?oid=1953308450&amp;format=interactive"></iframe>
+</center>
+<center>
+<iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQYaMp0XDM-amQK5B9RlSNxPt7sLs9CmfHcf4e-PtHm61hA332tRbQCbjImISwGRtKd1_CjxD33Rnkx/pubchart?oid=301539597&amp;format=interactive"></iframe>
+</center>
+</div>
+
+<div id="AG2" class="tabcontent">
+<p> Durante la AG2 hemos realizado trabajos con Tableau online, para lo que hemos realizado los siguientes pasos</p>
+ <ul>
+    <li>Hemos subido un datasets de películas</li>
+    <li>Hemos creado un libros de trabajo</li>
+    <li>Finalmente hemos creado hojas y cuadros de mandos</li>
+  </ul>
+<p>Los resultados se muestran a continuación</p>
+
+<center>
+<a href="https://ibb.co/XVJHvsJ"><img src="https://i.ibb.co/fQ0JPp0/Dashboard-AG2.png" alt="Dashboard-AG2" border="0"></a>
+  </center>
+  <center>
+<a href="https://ibb.co/9YQhMkF"><img src="https://i.ibb.co/nkxBWNH/Dashboard-3.png" alt="Dashboard-3" border="0"></a><br /><a target='_blank' href='https://es.imgbb.com/'>subir una imagen</a>
+  </center>
+<br />
+</div>
+
+
+<script>
+function openActivity(evt, aName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(aName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+
+
+
+
+<a href="https://colab.research.google.com/drive/1rTzFnbgkQtGWauKYiQUvsxyDg9dIEPdr">https://colab.research.google.com/drive/1rTzFnbgkQtGWauKYiQUvsxyDg9dIEPdr</a>
+  </body>
+</html>

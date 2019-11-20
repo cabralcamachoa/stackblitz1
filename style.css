@@ -3,6 +3,16 @@
 body {
   font-family: "Lato";
 }
+
+#viz1,#viz2,#viz3{
+width: 80%;
+height: 300px;
+}
+
+#viz2{
+height: 500px;
+}
+
 .tab {
   overflow: hidden;
   border: 1px solid #ccc;
